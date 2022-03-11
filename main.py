@@ -7,7 +7,7 @@ app = FastAPI()
  
 @app.get("/")
 async def index():
-    return {"hello": "fastapi"}
+    return {"Hello": "FastAPI"}
 
     
 if __name__ == "__main__":
