@@ -1,6 +1,5 @@
 name: ci
 on:
-  workflow_dispatch: #github页面手动触发
   push:
     tags:
       - "v*.*"
