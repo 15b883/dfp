@@ -1,8 +1,12 @@
-name: ci
+name: Publish Docker image
 on:
   push:
-    tags:
-      - "v*.*"
+    branches:
+      - main
+  schedule:
+    - cron: 37 * * * *
+  workflow_dispatch: {}
+  
 env:
   IMAGE_NAME: vscode-tpl #这是您的镜像名
 jobs:
